@@ -1,0 +1,25 @@
+.badge {
+  border: 2px solid brown;
+  border-radius: 1em;
+  background: red;
+  font-size: 14pt;
+  width: 14em;
+  height: 7em;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.greeting {
+  color: white;
+  font-family: sans-serif;
+  padding: 0.5em;
+}
+.name {
+  color: black;
+  background: white;
+  font-family: "Marker Felt", cursive;
+  font-size: 25pt;
+  padding-top: 1.0em;
+  padding-bottom: 0.7em;
+  height: 16px;
+}
