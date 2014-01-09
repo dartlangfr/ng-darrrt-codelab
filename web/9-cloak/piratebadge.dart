@@ -7,8 +7,8 @@ import 'dart:math' show Random;
 import 'package:angular/angular.dart';
 
 import 'badge/badge_component.dart';
-import 'tooltip/tooltip_directive.dart';
 import 'filter/capitalize_filter.dart';
+import 'rockandroll/rockandroll_directive.dart';
 
 class PirateName {
   static final Random indexGen = new Random();
@@ -63,11 +63,6 @@ class BadgesController {
     _name = new PirateName();
   }
 
-  TooltipModel get tooltip => new TooltipModel('fonzie1.jpg',
-          "I don't have a picture of these pirate, "
-          "so here's one of my cat instead!",
-          80);
-
   void _loadData() {
     datasLoaded = false;
     _http.get('piratenames.json').then((HttpResponse response) {
@@ -85,7 +80,7 @@ void main() {
     ..type(BadgesController)
     ..type(BadgeComponent)
     ..type(CapitalizeFilter)
-    ..type(Tooltip)
+    ..type(RockAndRoll)
     );
 }
 
