@@ -51,4 +51,4 @@ _**Keywords**: binding, scope, model_
 > 
 > - [How Angular does MVC](https://github.com/angular/angular.dart.tutorial/wiki/Creating-your-first-Angular-app#how-angular-does-mvc)
 
-## [Home](../README.md) | [< Previous](step-0.md) | [Next >](step-2.md)
+## [Home](../README.md) | [Next >](step-2.md)
