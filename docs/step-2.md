@@ -58,6 +58,7 @@ _**Keywords**: controller, module, click event_
  - Add the `button` tag below the input field
 
     ```HTLM
+    <div class="widgets">
       <div>
         <input type="text" id="inputName" maxlength="15" ng-model="name">
       </div>
@@ -70,7 +71,7 @@ _**Keywords**: controller, module, click event_
  > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller, passing it the recipe property from the view
 
 
-- Update data binding : replace `name` by `ctrl.name` to use name from controller.
+ - Update data binding : replace `name` by `ctrl.name` to use name from controller.
 
     ```HTML
     <input type="text" id="inputName" maxlength="15" ng-model="ctrl.name">
