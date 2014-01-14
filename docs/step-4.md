@@ -85,4 +85,4 @@ _**Keywords**: class_
     ```
  > The other data bindings are still valid, the syntax is the same to bind to a field or to a getter/setter
 
-## [Home](../README.md) | [< Previous](step-3a.md) | [Next >](step-4.md)
+## [Home](../README.md) | [< Previous](step-3b.md) | [Next >](step-5.md)

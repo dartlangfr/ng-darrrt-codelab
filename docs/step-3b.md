@@ -104,4 +104,4 @@ _**Keywords**: component, shadowDOM_
 > - [Increasing code reuse through Components](https://github.com/angular/angular.dart.tutorial/wiki/Increasing-code-reuse-through-Components)
 > - [Shadow DOM](http://www.w3.org/TR/shadow-dom/)
 
-## [Home](../README.md) | [< Previous](step-2.md) | [Next >](step-3b.md)
+## [Home](../README.md) | [< Previous](step-3a.md) | [Next >](step-4.md)

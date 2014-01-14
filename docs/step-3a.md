@@ -77,4 +77,4 @@ _**Keywords**: controller, module, click event_
 3. Run `piratebadge.html` and click on button.
 
 
-## [Home](../README.md) | [< Previous](step-1.md) | [Next >](step-3b.md)
+## [Home](../README.md) | [< Previous](step-2.md) | [Next >](step-3b.md)
