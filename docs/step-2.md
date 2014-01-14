@@ -15,7 +15,6 @@ _**Keywords**: controller, module, click event_
 
     }
     ``` 
-
  - Add a `NgController` annotation top of this class :
 
     ```Dart
@@ -28,7 +27,6 @@ _**Keywords**: controller, module, click event_
  > This annotation tells Angular that the class `BadgesController` is an Angular Controller. 
  The required `selector` field defines the CSS selector that will trigger the Controller. It can be any valid CSS selector   which does not cross element boundaries.
  The `publishAs` field specifies that the Controller instance should be assigned to the current scope under the name specified
-
  - Modify `main` method to create a new module.
 
     ```Dart
@@ -38,8 +36,6 @@ _**Keywords**: controller, module, click event_
     ``` 
     
  > Inside the ngBootstrap method, a new AngularModule is created. The AngularModule provides all of Angular’s built in services  and directives. Your app’s module is added to the list of modules that Angular loads.
-
-
  - In class `BadgesController`, add a `generateName` method :
 
     ```Dart  
@@ -54,10 +50,9 @@ _**Keywords**: controller, module, click event_
     ```HTML
     <body badges>
     ```
-
  - Add the `button` tag below the input field
 
-    ```HTLM
+    ```HTML
     <div class="widgets">
       <div>
         <input type="text" id="inputName" maxlength="15" ng-model="name">
@@ -69,8 +64,6 @@ _**Keywords**: controller, module, click event_
     ```
 
  > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller, passing it the recipe property from the view
-
-
  - Update data binding : replace `name` by `ctrl.name` to use name from controller.
 
     ```HTML
