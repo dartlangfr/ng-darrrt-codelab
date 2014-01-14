@@ -1,107 +1,80 @@
-## 3a. Create a badge component.
-> **Goal**: As a developper I can use a `<badge>` tag to put badge everywhere.
+## 2. Add a generate name button.
+> **Goal**: As a user I want to put the name 'Anne Bonney' when I click on a generate button.
 
-_**Keywords**: component, shadowDOM_
+_**Keywords**: controller, module, click event_
 
-1. Create a `web/badge` folder that will host all our compenent files.
-2. Create a file `web/badge/badge_component.html` and move the HTML corresponding to the badge in this new file:
-  
+1. Open `piratebadge.dart`.
+ - Create empty class `BadgesController` with a `name` field :
+
+    ```Dart
+    class BadgesController {
+    
+      String name = '';
+
+      BadgesController();
+
+    }
+    ``` 
+ - Add a `NgController` annotation top of this class :
+
+    ```Dart
+    @NgController(
+       selector: '[bagdes]',
+       publishAs: 'ctrl')
+    class BadgesController {   
+    ````
+
+ > This annotation tells Angular that the class `BadgesController` is an Angular Controller. 
+ The required `selector` field defines the CSS selector that will trigger the Controller. It can be any valid CSS selector   which does not cross element boundaries.
+ The `publishAs` field specifies that the Controller instance should be assigned to the current scope under the name specified
+ - Modify `main` method to create a new module.
+
+    ```Dart
+    void main() {
+      ngBootstrap(module: new Module()..type(BadgesController));
+    }
+    ``` 
+    
+ > Inside the ngBootstrap method, a new AngularModule is created. The AngularModule provides all of Angular’s built in services  and directives. Your app’s module is added to the list of modules that Angular loads.
+ - In class `BadgesController`, add a `generateName` method :
+
+    ```Dart  
+    generateName() {
+      name = 'Anne Bonney';
+    }
+    ```
+
+2. Open `piratebadge.html`. 
+ - Add `bagdes` (the controller selector name) on the `<body>` element:
+
     ```HTML
-    <div class="badge">
-      <div class="greeting">
-        Arrr! Me name is
+    <body badges>
+    ```
+ - Add the `button` tag below the input field
+
+    ```HTML
+    <div class="widgets">
+      <div>
+        <input type="text" id="inputName" maxlength="15" ng-model="name">
       </div>
-      <div class="name">
-        <span id="badgeName">{{ctrl.name}}</span>
+      <div>
+        <button ng-click="ctrl.generateName()">Aye! Gimme a name!</button>
       </div>
     </div>
     ```
 
-3. Create a file `web/badge/badge_component.css` that will contain the styles for the badge component:
-
-    ```CSS
-    .badge {
-      border: 2px solid brown;
-      border-radius: 1em;
-      background: red;
-      font-size: 14pt;
-      width: 14em;
-      height: 7em;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-    .greeting {
-      color: white;
-      font-family: sans-serif;
-      padding: 0.5em;
-    }
-    .name {
-      color: black;
-      background: white;
-      font-family: "Marker Felt", cursive;
-      font-size: 25pt;
-      padding-top: 1.0em;
-      padding-bottom: 0.7em;
-      height: 16px;
-    }
-    ```
-
-4. Create a file `web/badge/badge_component.dart`.
-
-    ```Dart
-    library badge;
-    
-    import 'package:angular/angular.dart';
-    
-    @NgComponent(
-        selector: 'badge',
-        templateUrl: 'badge/badge_component.html',
-        cssUrl: 'badge/badge_component.css',
-        publishAs: 'ctrl',
-        map: const {
-          'name' : '@name',
-        }
-    )
-    class BadgeComponent {
-      String name;
-    }
-    ```
- >#### `templateUrl` and `cssUrl`
- >Since Components are self contained, they need to know what HTML template and CSS to use for their view. Components do not use the HTML of your app. They have their own.
- >#### `map`
- >The last property we see in the `NgComponent` annotation is an attribute `map`. It maps HTML attributes to properties on the Component and represents the API for the Component. Users of this Component will be able to supply their own values for the attributes in this map.
- >You can read more about all the ways to declare an attribute [here](http://ci.angularjs.org/view/Dart/job/angular.dart-master/javadoc/angular.core/NgDirective.html#map).
-5. In `web/piratebadge.html` replace the HTML code of badge with the new `<badge>`:
+ > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller, passing it the recipe property from the view
+ - Update data binding : replace `name` by `ctrl.name` to use name from controller.
 
     ```HTML
-    <badge name="{{ctrl.name}}" style='float: left; margin-left: 20px;'></badge>
+    <input type="text" id="inputName" maxlength="15" ng-model="ctrl.name">
+    ```
+    
+    ```HTML
+    <span id="badgeName">{{ctrl.name}}</span>
     ```
 
-6. Register the new component. In `web/piratebadge.dart`:
- - Add an import for the component library:
+3. Run `piratebadge.html` and click on button.
 
-    ```Dart
-    import 'badge/badge_component.dart';
-    ```
- - Add the component type to the module:
 
-    ```Dart
-    void main() {
-      ngBootstrap(module: new Module()
-        ..type(BadgesController)
-        ..type(BadgeComponent));
-    }
-    ```
-
-7. Run your application.
-
-**Bonus** : try to add several badges on your page.
-
-<a name="hints"></a>
-> **Hints:**
-> 
-> - [Increasing code reuse through Components](https://github.com/angular/angular.dart.tutorial/wiki/Increasing-code-reuse-through-Components)
-> - [Shadow DOM](http://www.w3.org/TR/shadow-dom/)
-
-## [Home](../README.md) | [< Previous](step-2.md) | [Next >](step-3b.md)
+## [Home](../README.md) | [< Previous](step-1.md) | [Next >](step-3a.md)

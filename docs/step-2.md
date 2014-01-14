@@ -1,80 +1,54 @@
-## 2. Add a generate name button.
-> **Goal**: As a user I want to put the name 'Anne Bonney' when I click on a generate button.
+## 1. Set the text in badge with the input text.
+> **Goal**: As a user I can modify the text of the badge with the input field.
 
-_**Keywords**: controller, module, click event_
+_**Keywords**: binding, scope, model_
 
-1. Open `piratebadge.dart`.
- - Create empty class `BadgesController` with a `name` field :
-
-    ```Dart
-    class BadgesController {
-    
-      String name = '';
-
-      BadgesController();
-
-    }
-    ``` 
- - Add a `NgController` annotation top of this class :
-
-    ```Dart
-    @NgController(
-       selector: '[bagdes]',
-       publishAs: 'ctrl')
-    class BadgesController {   
-    ````
-
- > This annotation tells Angular that the class `BadgesController` is an Angular Controller. 
- The required `selector` field defines the CSS selector that will trigger the Controller. It can be any valid CSS selector   which does not cross element boundaries.
- The `publishAs` field specifies that the Controller instance should be assigned to the current scope under the name specified
- - Modify `main` method to create a new module.
-
-    ```Dart
-    void main() {
-      ngBootstrap(module: new Module()..type(BadgesController));
-    }
-    ``` 
-    
- > Inside the ngBootstrap method, a new AngularModule is created. The AngularModule provides all of Angular’s built in services  and directives. Your app’s module is added to the list of modules that Angular loads.
- - In class `BadgesController`, add a `generateName` method :
-
-    ```Dart  
-    generateName() {
-      name = 'Anne Bonney';
-    }
+1. Open `pubspec.yaml`. It includes a new dependency:
+  
+    ```YAML
+    dependencies:
+      angular: any
     ```
 
-2. Open `piratebadge.html`. 
- - Add `bagdes` (the controller selector name) on the `<body>` element:
+2. Open `web/1-blankbadge/piratebadge.html`. Add `ng-app` on the `<html>` element:
 
     ```HTML
-    <body badges>
+    <html ng-app>
     ```
- - Add the `button` tag below the input field
+
+ >The `ng-app` Directive can be placed on any element, and tells Angular which element is the root element of the application. Anything inside of this element is part of the page template managed by Angular. Unless you have a reason for Angular to manage only part of the app, it is recommended to put the `ng-app` Directive on the HTML element because it is the outermost tag.
+
+3. Open `web/1-blankbadge/piratebadge.dart`. Add `ngBootstrap()` to the main content to bootstrap our application :
+
+    ```Dart
+	import 'package:angular/angular.dart';
+	
+	void main() {
+	  ngBootstrap();
+	}
+    ```
+
+4. Bind the `input` to the badge content:
+ - Set `{{name}}` as content within the `badgeName` `<span>`
 
     ```HTML
-    <div class="widgets">
-      <div>
-        <input type="text" id="inputName" maxlength="15" ng-model="name">
-      </div>
-      <div>
-        <button ng-click="ctrl.generateName()">Aye! Gimme a name!</button>
-      </div>
+    <span id="badgeName">{{name}}</span>
+    ```
+ - Add the `<input>` tag to the HTML code within the `widgets` `<div>`
+
+    ```HTML
+    <div>
+      <input type="text" id="inputName" maxlength="15" ng-model="name">
     </div>
     ```
 
- > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller, passing it the recipe property from the view
- - Update data binding : replace `name` by `ctrl.name` to use name from controller.
+ > Notice that on the input element, we find a Directive called `ng-model`. The value of the model object is displayed in the view using the Angular expression `{{name}}`. 
 
-    ```HTML
-    <input type="text" id="inputName" maxlength="15" ng-model="ctrl.name">
-    ```
-    
-    ```HTML
-    <span id="badgeName">{{ctrl.name}}</span>
-    ```
+5. Run `web/1-blankbadge/piratebadge.html` and try to modify the input content. Notice how the view is updated in real time whenever the model changes. This is called _Two Way Data Binding_. Angular listens for changes to the model and updates the view to reflect those changes.
 
-3. Run `piratebadge.html` and click on button.
+<a name="hints"></a>
+> **Hints:**
+> 
+> - [How Angular does MVC](https://github.com/angular/angular.dart.tutorial/wiki/Creating-your-first-Angular-app#how-angular-does-mvc)
 
-
-## [Home](../README.md) | [< Previous](step-1.md) | [Next >](step-3a.md)
+## [Home](../README.md) | [Next >](step-2.md)
