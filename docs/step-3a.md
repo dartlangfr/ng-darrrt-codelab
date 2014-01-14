@@ -17,7 +17,7 @@ _**Keywords**: component, shadowDOM_
     </div>
     ```
 
-3. Create a file `web/badge/badge_component.css` that will contains the styles for the badge component:
+3. Create a file `web/badge/badge_component.css` that will contain the styles for the badge component:
 
     ```CSS
     .badge {
