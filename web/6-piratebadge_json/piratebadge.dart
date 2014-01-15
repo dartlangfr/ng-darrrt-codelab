@@ -3,6 +3,7 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'dart:math' show Random;
+import 'dart:async' show Future;
 
 import 'package:angular/angular.dart';
 
@@ -47,7 +48,11 @@ class BadgesController {
   bool datasLoaded = false;
 
   BadgesController(this._http) {
-    _loadData();
+    _loadData().then((HttpResponse response) {
+      datasLoaded = true;
+    }, onError: (Object obj) {
+      datasLoaded = false;
+    });
   }
 
   set name(String value) {
@@ -61,14 +66,10 @@ class BadgesController {
     _name = new PirateName();
   }
 
-  void _loadData() {
-    datasLoaded = false;
-    _http.get('piratenames.json').then((HttpResponse response) {
+  Future _loadData() {
+    return _http.get('piratenames.json').then((HttpResponse response) {
       PirateName.names = response.data['names'];
       PirateName.appellations = response.data['appellations'];
-      datasLoaded = true;
-    }, onError: (Object obj) {
-      datasLoaded = false;
     });
   }
 }

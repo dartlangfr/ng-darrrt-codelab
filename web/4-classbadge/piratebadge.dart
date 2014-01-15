@@ -24,12 +24,12 @@ class PirateName {
   PirateName({String firstName, String appellation}) {
 
     if (firstName == null) {
-      _firstName = names[indexGen.nextInt(names.length)];
+      _firstName = names.isEmpty ? '' : names[indexGen.nextInt(names.length)];
     } else {
       _firstName = firstName;
     }
     if (appellation == null) {
-      _appellation = appellations[indexGen.nextInt(appellations.length)];
+      _appellation = appellations.isEmpty ? '' : appellations[indexGen.nextInt(appellations.length)];
     } else {
       _appellation = appellation;
     }

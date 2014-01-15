@@ -1,4 +1,4 @@
-## 3.b. Use a class as model
+## 4. Use a class as model
 > **Goal**: As a developper, I want to use a class object as model
 
 _**Keywords**: class_
@@ -25,12 +25,12 @@ _**Keywords**: class_
       PirateName({String firstName, String appellation}) {
     
         if (firstName == null) {
-          _firstName = names[indexGen.nextInt(names.length)];
+          _firstName = names.isEmpty ? '' : names[indexGen.nextInt(names.length)];
         } else {
           _firstName = firstName;
         }
         if (appellation == null) {
-          _appellation = appellations[indexGen.nextInt(appellations.length)];
+          _appellation = appellations.isEmpty ? '' : appellations[indexGen.nextInt(appellations.length)];
         } else {
           _appellation = appellation;
         }
@@ -77,7 +77,7 @@ _**Keywords**: class_
       // ...
     }
     ```
-2. Update data bindings
+3. Update data bindings
  - In `piratebadge.html`, update the data binding in the `badge` tag
 
     ```HTML
