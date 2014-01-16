@@ -68,7 +68,6 @@ _**Keywords**: http, injection, disable_
       final Http _http;
     ```
 > Angular provides a built in service called the Http Service that handles making HTTP requests to the server.
-
  - Add a constructor which injected the `_http` instance:
  
     ```Dart
