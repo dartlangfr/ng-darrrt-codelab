@@ -73,6 +73,17 @@ _**Keywords**: controller, module, click event_
     ```HTML
     <span id="badgeName">{{ctrl.name}}</span>
     ```
+    
+ - Add a `ng-disabled` directive on the button tag who disable it when the input field will be not empty.
+ 
+ 	```HTML
+    <button 	ng-click="ctrl.generateName()"
+    			ng-disabled="ctrl.name.trim().isNotEmpty">
+    			Aye! Gimme a name!
+    </button>
+    ```
+    
+ > `ng-disabled` like the `ng-click` directive it's out of the box in AngularDart. This one is used to enable or disable a element according of a boolean expression. In our case we test than the name property is not empty after have trimed it.
 
 3. Run `piratebadge.html` and click on button.
 
