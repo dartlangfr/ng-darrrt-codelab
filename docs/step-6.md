@@ -4,36 +4,38 @@
 _**Keywords**: HTTP Request, Dependency Injection_
 
 1. (Re)Create piratenames.json
- - Use **File > New File…** to create a JSON-encoded file named `piratenames.json` with the following content.  
-   Put the file in `1-blankbadge` alongside the Dart and HTML files you’ve been editing.
+ - Use **File > New Fileâ€¦** to create a JSON-encoded file named `piratenames.json` with the following content.  
+   Put the file in `1-blankbadge` alongside the Dart and HTML files youï¿½ve been editing.
 
     ```JSON
     { "names": [ "Anne", "Bette", "Cate", "Dawn",
-                           "Elise", "Faye", "Ginger", "Harriot",
-                           "Izzy", "Jane", "Kaye", "Liz",
-                           "Maria", "Nell", "Olive", "Pat",
-                           "Queenie", "Rae", "Sal", "Tam",
-                           "Uma", "Violet", "Wilma", "Xana",
-                           "Yvonne", "Zelda",
-                           "Abe", "Billy", "Caleb", "Davie",
-                           "Eb", "Frank", "Gabe", "House",
-                           "Icarus", "Jack", "Kurt", "Larry",
-                           "Mike", "Nolan", "Oliver", "Pat",
-                           "Quib", "Roy", "Sal", "Tom",
-                           "Ube", "Val", "Walt", "Xavier",
-                           "Yvan", "Zeb"],
-    "appellations": [ "Awesome", "Black", "Captain", "Damned",
-                                "Even", "Fighter", "Great", "Hearty",
-                                "Irate", "Jackal", "King", "Lord",
-                                "Mighty", "Noble", "Old", "Powerful",
-                                "Quick", "Red", "Stalwart", "Tank",
-                                "Ultimate", "Vicious", "Wily", "aXe", "Young", "Zealot",
-                                "Angry", "Brave", "Crazy", "Damned",
-                                "Eager", "Fool", "Greedy", "Hated",
-                                "Idiot", "Jinxed", "Kind", "Lame",
-                                "Maimed", "Naked", "Old", "Pale",
-                                "Queasy", "Rat", "Sandy", "Tired",
-                                "Ugly", "Vile", "Weak", "Xeric", "Yellow", "Zesty"]}
+            "Elise", "Faye", "Ginger", "Harriot",
+            "Izzy", "Jane", "Kaye", "Liz",
+            "Maria", "Nell", "Olive", "Pat",
+            "Queenie", "Rae", "Sal", "Tam",
+            "Uma", "Violet", "Wilma", "Xana",
+            "Yvonne", "Zelda",
+            "Abe", "Billy", "Caleb", "Davie",
+            "Eb", "Frank", "Gabe", "House",
+            "Icarus", "Jack", "Kurt", "Larry",
+            "Mike", "Nolan", "Oliver", "Pat",
+            "Quib", "Roy", "Sal", "Tom",
+            "Ube", "Val", "Walt", "Xavier",
+            "Yvan", "Zeb"],
+      "appellations": [ "Awesome", "Black", "Captain", "Damned",
+            "Even", "Fighter", "Great", "Hearty",
+            "Irate", "Jackal", "King", "Lord",
+            "Mighty", "Noble", "Old", "Powerful",
+            "Quick", "Red", "Stalwart", "Tank",
+            "Ultimate", "Vicious", "Wily", "aXe",
+            "Young", "Zealot",
+            "Angry", "Brave", "Crazy", "Damned",
+            "Eager", "Fool", "Greedy", "Hated",
+            "Idiot", "Jinxed", "Kind", "Lame",
+            "Maimed", "Naked", "Old", "Pale",
+            "Queasy", "Rat", "Sandy", "Tired",
+            "Ugly", "Vile", "Weak", "Xeric",
+            "Yellow", "Zesty"]}  
     ```
 2. Edit piratebadge.dart
  - Add an import to the top of the file.
@@ -57,10 +59,6 @@ _**Keywords**: HTTP Request, Dependency Injection_
     class PirateName {
       // ...
       final Http _http;
-    
-      BadgesController(this._http) {
-        _loadData();
-      }
       // ...
     }
     ```
@@ -121,4 +119,10 @@ _**Keywords**: HTTP Request, Dependency Injection_
     ...
     ```
  > - **TODO**
- 
+
+<a name="hints"></a>
+> **Hints:**
+> 
+> - [Introducing the Http service](https://github.com/angular/angular.dart.tutorial/wiki/Introducing-filters-and-services) 
+
+## [Home](../README.md) | [< Previous](step-5.md) | [Next >](step-7.md)
