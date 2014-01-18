@@ -22,14 +22,15 @@ Before you begin this codelab, you should have the last [Dart Editor][1] Setup r
 # Steps
 This codelab is divided into the following sections:
 
-1. [TODO](docs/step-1.md)
-2. [TODO](docs/step-2.md)
-3. [TODO](docs/step-3.md)
-4. [TODO](docs/step-4.md)
-5. [TODO](docs/step-5.md)
-6. [TODO](docs/step-6.md)
+1. [Run the skeleton app](docs/step-1.md)
+2. [Set the text in badge with the input text](docs/step-2.md)
+3. [Add a generate name button](docs/step-3.md)
+4. [Create a badge component](docs/step-4.md)
+5. [Use a class as model](docs/step-5.md)
+6. [Read names from JSON-encoded file](docs/step-6.md)
 7. [TODO](docs/step-7.md)
-8. [TODO](docs/step-8.md)
+8. [Capitalize the name on the badge](docs/step-8.md)
+9. [Keep the page empty until it has been initialized](docs/step-9.md)
 
 
 # Feedback
