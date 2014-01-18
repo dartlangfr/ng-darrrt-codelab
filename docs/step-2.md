@@ -3,6 +3,11 @@
 
 _**Keywords**: binding, scope, model_
 
+-----------------------------
+> **Note**: Throughout this code lab, continue to edit the files in 1-blankbadge. You can use the files in the other directories to compare to your code or to recover if you get off track.
+
+-----------------------------
+
 1. Open `pubspec.yaml`. It includes a new dependency:
   
     ```YAML
