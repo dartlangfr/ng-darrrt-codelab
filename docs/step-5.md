@@ -3,7 +3,7 @@
 
 _**Keywords**: http, injection, disable_
 
-1. Use File > New File… to create a JSON-encoded file named `piratenames.json` with the following content. Put the file in `1-blankbadge` alongside the Dart and HTML files you’ve been editing.
+1. Use File > New File… to create a JSON-encoded file named `piratenames.json` with the following content. Put the file in `4-classbadge` alongside the Dart and HTML files you’ve been editing.
 
     ```js
     { "names": [ "Anne", "Bette", "Cate", "Dawn",
