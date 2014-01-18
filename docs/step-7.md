@@ -1,4 +1,4 @@
-## 6. Create a directive.
+## 7. Create a directive.
 > **Goal**: As a developer, I want to change badge css style when the user drag his mouse over on it .
 
 _**Keywords**: directive_
