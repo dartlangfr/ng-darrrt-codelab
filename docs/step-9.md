@@ -23,4 +23,14 @@ _**Keywords**: cloak_
 
 2. Run `piratebadge.html`. You shouldn't see any mustache on the page.
 
+
+##Problems?
+
+Check your code against the files in 9-cloak.
+
+<a href="../web/9-cloak/piratebadge.html" target="_blank">piratebadge.html</a>
+
+<a href="../web/9-cloak/piratebadge.dart" target="_blank">piratebadge.dart</a>
+
+
 ## [Home](../README.md) | [< Previous](step-8.md)

@@ -104,4 +104,13 @@ _**Keywords**: component, shadowDOM_
 > - [Increasing code reuse through Components](https://github.com/angular/angular.dart.tutorial/wiki/Increasing-code-reuse-through-Components)
 > - [Shadow DOM](http://www.w3.org/TR/shadow-dom/)
 
+##Problems?
+
+Check your code against the files in 4-extractcomponent.
+
+<a href="../web/4-extractcomponent/piratebadge.html" target="_blank">piratebadge.html</a>
+
+<a href="../web/4-extractcomponent/piratebadge.dart" target="_blank">piratebadge.dart</a>
+
+
 ## [Home](../README.md) | [< Previous](step-3.md) | [Next >](step-5.md)

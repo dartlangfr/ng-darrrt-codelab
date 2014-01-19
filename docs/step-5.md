@@ -84,5 +84,13 @@ _**Keywords**: class_
     <badge name="{{ctrl.pirateName}}" style='float: left; margin-left: 20px;'></badge>
     ```
  > The other data bindings are still valid, the syntax is the same to bind to a field or to a getter/setter
+ 
+##Problems?
+
+Check your code against the files in 5-classbadge.
+
+<a href="../web/5-classbadge/piratebadge.html" target="_blank">piratebadge.html</a>
+
+<a href="../web/5-classbadge/piratebadge.dart" target="_blank">piratebadge.dart</a>
 
 ## [Home](../README.md) | [< Previous](step-4.md) | [Next >](step-6.md)
