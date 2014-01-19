@@ -3,17 +3,8 @@ ng-darrrt Codelab
 
 Learn how to build a webapp with Angular.Dart in one hour.
 
-# Introduction
-**TODO**
-
 ### Prerequisites
 Before you begin this codelab, you should have the last [Dart Editor][1] Setup ready.
-
-### Useful links
-- [A Tour of the Dart Language][2]
-- [Dart API Reference][3]
-- [AngularJs][4]
-- [Angular.dart tutorial][5]
 
 
 # Steps
@@ -30,6 +21,13 @@ This codelab is divided into the following sections:
 9. [Keep the page empty until it has been initialized](docs/step-9.md)
 
 
+### Useful links
+- [A Tour of the Dart Language][2]
+- [Dart API Reference][3]
+- [AngularJs][4]
+- [Angular.dart tutorial][5]
+
+
 # Feedback
 
 At the end, if you've got a few minutes, would you mind filling out an [anonymous feedback form][feedback] on the course so we can improve it in future?
@@ -39,7 +37,7 @@ At the end, if you've got a few minutes, would you mind filling out an [anonymou
 
 - [+Alexandre Ardhuin](https://plus.google.com/101145059477513456972)
 - [+Guillaume Girou](https://plus.google.com/+GuillaumeGirou), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
-- [+Mathieu Breton](https://plus.google.com/104789658634836684459)
+- [+Mathieu Breton](https://twitter.com/MatBreton), [@Xebia](http://www.xebia.fr)
 - [+Nicolas Fran\cois](https://plus.google.com/+NicolasFrancois), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 
 _Thanks to [+DartlangFr](http://gplus.to/dartlangfr) team._  
