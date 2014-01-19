@@ -6,8 +6,21 @@ The MVC pattern from Angular’s perspective: Separate applications into distinc
 ## 1. Run the skeleton app.
 > **Goal**: In this step, you open the source files, familiarize yourself with the Dart and HTML code, and run the app.
 
-_**Keywords**: TODO_
+_**Keywords**: main, pub, dartium_
 
+1. Dart comes with a bunch of tools like Pub. Pub is the dependency manager built in the langage. Its configuration is define by the `pubspec.yaml` file in the root of project, take a look on this last.
+
+	```	
+	name: ng-darrrt-codelab
+	description: A one hour excercice, based on the Darrrt project, to learn AngularDart.
+	dependencies:
+  		angular: any
+  		browser: any
+  	```
+	> - Thanks to this file, you can define the name, the description of our project and many dependencies by add a `name_of_your_dependency : version_of_your_dependency` line in the `dependencies` section (be careful, the YAML format that is used by the pubspec file is sensitive to tabulation). In our case we define that the project needs the `browser` and the `angular` dependencies in any version. The browser dependency is used in Dart browser apps to check for native Dart support and either (a) bootstrap Dartium or (b) load compiled JS instead. And the angular dependency is obviously the port of the Angular framework in Dart.
+	> - All available dependencies in Dart are stored and listed on the [pub.dartlang.org](http://pub.dartlang.org/) web site.
+	
+	
 
 1. Expand the `1-blankbadge` directory.
   In Dart Editor, expand the `1-blankbadge` directory by clicking the little arrow ► to the left of its name. 
@@ -45,9 +58,6 @@ _**Keywords**: TODO_
       </body>
     </html>
     ```
- > **TODO: check if it's the same for our code lab**
- > - During this code lab, all the changes you make to `piratebadge.html` are within the `<div>` element identified with the class `widgets`.
- > - In later steps, the `<span>` element with the ID `badgeName` is programmatically updated by the Dart code based on user input.
  > - The first `<script>` tag identifies the main file that implements the app. Here, it’s the `piratebadge.dart` file.
  > - The Dart Virtual Machine (Dart VM) runs Dart code natively. The Dart VM is built into Dartium, a special build of the Chromium browser in which you can run Dart apps natively.
  > - The `packages/browser/dart.js` script checks for native Dart support and either bootstraps the Dart VM or loads compiled JavaScript instead.

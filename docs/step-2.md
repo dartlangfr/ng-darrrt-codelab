@@ -8,22 +8,15 @@ _**Keywords**: binding, scope, model_
 
 -----------------------------
 
-1. Open `pubspec.yaml`. It includes a new dependency:
-  
-    ```YAML
-    dependencies:
-      angular: any
-    ```
-
-2. Open `web/1-blankbadge/piratebadge.html`. Add `ng-app` on the `<html>` element:
+1. Open `web/1-blankbadge/piratebadge.html`. Add `ng-app` on the `<html>` element:
 
     ```HTML
     <html ng-app>
     ```
 
- >The `ng-app` Directive can be placed on any element, and tells Angular which element is the root element of the application. Anything inside of this element is part of the page template managed by Angular. Unless you have a reason for Angular to manage only part of the app, it is recommended to put the `ng-app` Directive on the HTML element because it is the outermost tag.
+	>The `ng-app` Directive can be placed on any element, and tells Angular which element is the root element of the application. Anything inside of this element is part of the page template managed by Angular. Unless you have a reason for Angular to manage only part of the app, it is recommended to put the `ng-app` Directive on the HTML element because it is the outermost tag.
 
-3. Open `web/1-blankbadge/piratebadge.dart`. Add `ngBootstrap()` to the main content to bootstrap our application :
+2. Open `web/1-blankbadge/piratebadge.dart`. Add `ngBootstrap()` to the main content to bootstrap our application :
 
     ```Dart
 	import 'package:angular/angular.dart';
@@ -33,7 +26,7 @@ _**Keywords**: binding, scope, model_
 	}
     ```
 
-4. Bind the `input` to the badge content:
+3. Bind the `input` to the badge content:
  - Set `{{name}}` as content within the `badgeName` `<span>`
 
     ```HTML
@@ -49,7 +42,7 @@ _**Keywords**: binding, scope, model_
 
  > Notice that on the input element, we find a Directive called `ng-model`. The value of the model object is displayed in the view using the Angular expression `{{name}}`. 
 
-5. Run `web/1-blankbadge/piratebadge.html` and try to modify the input content. Notice how the view is updated in real time whenever the model changes. This is called _Two Way Data Binding_. Angular listens for changes to the model and updates the view to reflect those changes.
+4. Run `web/1-blankbadge/piratebadge.html` and try to modify the input content. Notice how the view is updated in real time whenever the model changes. This is called _Two Way Data Binding_. Angular listens for changes to the model and updates the view to reflect those changes.
 
 <a name="hints"></a>
 > **Hints:**
