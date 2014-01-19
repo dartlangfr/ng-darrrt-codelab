@@ -141,13 +141,9 @@ _**Keywords**: HTTP Request, Dependency Injection_
 > 
 > - [Introducing the Http service](https://github.com/angular/angular.dart.tutorial/wiki/Introducing-filters-and-services) 
 
-
-##Problems?
-
-Check your code against the files in  6-piratebadge_json.
-
-<a href="../web/6-piratebadge_json/piratebadge.html" target="_blank">piratebadge.html</a>
-
-<a href="../web/6-piratebadge_json/piratebadge.dart" target="_blank">piratebadge.dart</a>
+### Problems?
+Check your code against the files in [6-piratebadge_json](../web/6-piratebadge_json).
+- [piratebadge.html](../web/6-piratebadge_json/piratebadge.html)
+- [piratebadge.dart](../web/6-piratebadge_json/piratebadge.dart)
 
 ## [Home](../README.md) | [< Previous](step-5.md) | [Next >](step-7.md)

@@ -90,14 +90,9 @@ _**Keywords**: controller, module, click event_
 
 3. Run `piratebadge.html` and click on button.
 
-##Problems?
-
-Check your code against the files in 3-buttonbadge.
-
-<a href="../web/3-buttonbadge/piratebadge.html" target="_blank">piratebadge.html</a>
-
-<a href="../web/3-buttonbadge/piratebadge.dart" target="_blank">piratebadge.dart</a>
-
-
+### Problems?
+Check your code against the files in [3-buttonbadge](../web/3-buttonbadge).
+- [piratebadge.html](../web/3-buttonbadge/piratebadge.html)
+- [piratebadge.dart](../web/3-buttonbadge/piratebadge.dart)
 
 ## [Home](../README.md) | [< Previous](step-2.md) | [Next >](step-4.md)

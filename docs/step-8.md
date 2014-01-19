@@ -55,13 +55,9 @@ _**Keywords**: filter_
 > 
 > - [Introducing Filters](https://github.com/angular/angular.dart.tutorial/wiki/Introducing-filters-and-services#introducing-filters)
 
-##Problems?
-
-Check your code against the files in 8-filter.
-
-<a href="../web/8-filter/piratebadge.html" target="_blank">piratebadge.html</a>
-
-<a href="../web/8-filter/piratebadge.dart" target="_blank">piratebadge.dart</a>
-
+### Problems?
+Check your code against the files in [8-filter](../web/8-filter).
+- [piratebadge.html](../web/8-filter/piratebadge.html)
+- [piratebadge.dart](../web/8-filter/piratebadge.dart)
 
 ## [Home](../README.md) | [< Previous](step-7.md) | [Next >](step-9.md)

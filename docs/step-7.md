@@ -59,14 +59,9 @@ _**Keywords**: directive_
     ```
 4. Run `piratebadge.html` and drag your mouse over badge.  
 
+### Problems?
+Check your code against the files in [7-directive](../web/7-directive).
+- [piratebadge.html](../web/7-directive/piratebadge.html)
+- [piratebadge.dart](../web/7-directive/piratebadge.dart)
  
-    
-##Problems?
-
-Check your code against the files in 7-directive.
-
-<a href="../web/7-directive/piratebadge.html" target="_blank">piratebadge.html</a>
-
-<a href="../web/7-directive/piratebadge.dart" target="_blank">piratebadge.dart</a>
-     
 ## [Home](../README.md) | [< Previous](step-6.md) | [Next >](step-8.md)

@@ -50,12 +50,9 @@ _**Keywords**: binding, scope, model_
 > - [How Angular does MVC](https://github.com/angular/angular.dart.tutorial/wiki/Creating-your-first-Angular-app#how-angular-does-mvc)
 >
 
-##Problems?
-Check your code against the files in 2-inputbadge.
-
-<a href="../web/2-inputnamebadge/piratebadge.html" target="_blank">piratebadge.html</a>
-
-<a href="../web/2-inputnamebadge/piratebadge.dart" target="_blank">piratebadge.dart</a>
-
+### Problems?
+Check your code against the files in [2-inputnamebadge](../web/2-inputnamebadge).
+- [piratebadge.html](../web/2-inputnamebadge/piratebadge.html)
+- [piratebadge.dart](../web/2-inputnamebadge/piratebadge.dart)
 
 ## [Home](../README.md) | [< Previous](step-1.md) | [Next >](step-3.md)
