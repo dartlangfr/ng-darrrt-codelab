@@ -3,15 +3,10 @@ Angular is a client-side structural framework for creating dynamic web applicati
 Angular helps you extend HTML’s syntax to create custom elements and attributes that contain application behavior. Angular reduces the need to do DOM manipulation as Directives create reusable components that do most of what you need without requiring you to repeat DOM boilerplate everywhere. This allows you to concentrate on your application’s logic, and not on how to trick the browser into doing what you want.
 The MVC pattern from Angular’s perspective: Separate applications into distinct presentation, data, and logic components. Encourage loose coupling between these components.
 
------------------------------
-> **Note**: If you have already done the [Official Darrrt Code Lab](https://www.dartlang.org/codelabs/darrrt/), you can jump to the **[next step](step-2.md)**.
-
------------------------------
-
 ## 1. Run the skeleton app.
 > **Goal**: In this step, you open the source files, familiarize yourself with the Dart and HTML code, and run the app.
 
-_**Keywords**: main, pub, dartium_
+_**Keywords**: main, pub, Dartium, Angular_
 
 1. Dart comes with a bunch of tools like Pub. Pub is the dependency manager built in the langage. Its configuration is define by the `pubspec.yaml` file in the root of project, take a look on this last.
 
@@ -22,10 +17,13 @@ _**Keywords**: main, pub, dartium_
   		angular: any
   		browser: any
   	```
-	> - Thanks to this file, you can define the name, the description of our project and many dependencies by add a `name_of_your_dependency : version_of_your_dependency` line in the `dependencies` section (be careful, the YAML format that is used by the pubspec file is sensitive to tabulation). In our case we define that the project needs the `browser` and the `angular` dependencies in any version. The browser dependency is used in Dart browser apps to check for native Dart support and either (a) bootstrap Dartium or (b) load compiled JS instead. And the angular dependency is obviously the port of the Angular framework in Dart.
+	> - Thanks to this file, you can define the name, the description of our project and many dependencies by add a `name_of_your_dependency: version_of_your_dependency` line in the `dependencies` section (be careful, the YAML format that is used by the pubspec file is sensitive to tabulation). In our case we define that the project needs the `browser` and the `angular` dependencies in any version. The browser dependency is used in Dart browser apps to check for native Dart support and either (a) bootstrap Dartium or (b) load compiled JS instead. And the angular dependency is obviously the port of the Angular framework in Dart.
 	> - All available dependencies in Dart are stored and listed on the [pub.dartlang.org](http://pub.dartlang.org/) web site.
-	
-	
+
+-----------------------------
+> **Note**: If you have already done the [Official Darrrt Code Lab](https://www.dartlang.org/codelabs/darrrt/), you already know how to run the app. You can jump to the **[next step](step-2.md)**.
+
+-----------------------------
 
 1. Expand the `1-blankbadge` directory.
   In Dart Editor, expand the `1-blankbadge` directory by clicking the little arrow ► to the left of its name. 
