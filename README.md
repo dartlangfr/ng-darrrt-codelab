@@ -7,7 +7,7 @@ Learn how to build a webapp with Angular.Dart in one hour.
 Before you begin this codelab, you should have the last [Dart Editor][1] Setup ready.
 
 
-# Steps
+### Steps
 This codelab is divided into the following sections:
 
 1. [Run the skeleton app](docs/step-1.md)
@@ -28,13 +28,11 @@ This codelab is divided into the following sections:
 - [Angular.dart tutorial][5]
 
 
-# Feedback
-
+### Feedback
 At the end, if you've got a few minutes, would you mind filling out an [anonymous feedback form][feedback] on the course so we can improve it in future?
 
 
-# Credits
-
+### Credits
 - [+Alexandre Ardhuin](https://plus.google.com/101145059477513456972)
 - [+Guillaume Girou](https://plus.google.com/+GuillaumeGirou), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 - [+Mathieu Breton](https://twitter.com/MatBreton), [@Xebia](http://www.xebia.fr)
@@ -47,4 +45,4 @@ _Thanks to [+DartlangFr](http://gplus.to/dartlangfr) team._
   [3]: http://api.dartlang.org/docs/channels/stable/latest/
   [4]: http://angularjs.org/
   [5]: https://github.com/angular/angular.dart.tutorial
-  [feedback]: https://docs.google.com/forms/d/1F0ZE-ZfNyNm-MQtEzq1xmvv9Y5g6exAFs9zXH65Bb18/viewform
+  [feedback]: https://docs.google.com/forms/d/1F0ZE-ZfNyNm-MQtEzq1xmvv9Y5g6exAFs9zXH65Bb18/viewform?entry.1890092742=At%C2%A0Dart+Flight+School,+Paris,+Jan.+20th,+2014&entry.475282761
