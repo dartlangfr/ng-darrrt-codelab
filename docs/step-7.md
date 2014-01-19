@@ -5,7 +5,7 @@ _**Keywords**: directive_
 
 > At a high level, directives are markers on a DOM element (such as an attribute, element name, or CSS class) that tell AngularDart's HTML compiler to attach a specified behavior to that DOM element or even transform the DOM element and its children.
 
-1. Create a file `rockandroll/rockandroll_directive.dart`.
+1. Create a file `rockandroll/rockandroll_directive.dart` in your work directory.
  - Paste the following content:
 
     ```Dart

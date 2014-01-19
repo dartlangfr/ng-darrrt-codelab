@@ -5,7 +5,7 @@ _**Keywords**: HTTP Request, Dependency Injection_
 
 1. (Re)Create piratenames.json
  - Use **File > New File…** to create a JSON-encoded file named `piratenames.json` with the following content.  
-   Put the file in `1-blankbadge` alongside the Dart and HTML files you�ve been editing.
+   Put the file in `1-blankbadge` alongside the Dart and HTML files you've been editing.
 
     ```JSON
     { "names": [ "Anne", "Bette", "Cate", "Dawn",

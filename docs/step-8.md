@@ -5,7 +5,7 @@ _**Keywords**: filter_
 
 >Filters let you change how your model data is displayed in the view without changing the model data itself. They do things like allow you to show parts of the model data, or display data in a particular format. You can also use Angular’s custom filters feature to create your own filters to do anything you want.
 
-1. Create a file `filter/capitalize_filter.dart` and paste the following content:
+1. Create a file `filter/capitalize_filter.dart` in your work directory and paste the following content:
   
     ```DART
     library category_filter;

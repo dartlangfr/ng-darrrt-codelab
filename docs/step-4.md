@@ -3,8 +3,8 @@
 
 _**Keywords**: component, shadowDOM_
 
-1. Create a `web/3a-buttonbadge/badge` folder that will host all our compenent files.
-2. Create a file `web/3a-buttonbadge/badge/badge_component.html` and move the HTML corresponding to the badge in this new file:
+1. Create a `badge` folder in your work directory that will host all our compenent files.
+2. Create a file `badge/badge_component.html` and move the HTML corresponding to the badge in this new file:
   
     ```HTML
     <div class="badge">
@@ -17,7 +17,7 @@ _**Keywords**: component, shadowDOM_
     </div>
     ```
 
-3. Create a file `web/3a-buttonbadge/badge/badge_component.css` that will contain the styles for the badge component:
+3. Create a file `badge/badge_component.css` that will contain the styles for the badge component:
 
     ```CSS
     .badge {
@@ -47,7 +47,7 @@ _**Keywords**: component, shadowDOM_
     }
     ```
 
-4. Create a file `web/3a-buttonbadge/badge/badge_component.dart`.
+4. Create a file `badge/badge_component.dart`.
 
     ```Dart
     library badge;
@@ -72,7 +72,7 @@ _**Keywords**: component, shadowDOM_
  >#### `map`
  >The last property we see in the `NgComponent` annotation is an attribute `map`. It maps HTML attributes to properties on the Component and represents the API for the Component. Users of this Component will be able to supply their own values for the attributes in this map.
  >You can read more about all the ways to declare an attribute [here](http://ci.angularjs.org/view/Dart/job/angular.dart-master/javadoc/angular.core/NgDirective.html#map).
-5. In `web/3a-buttonbadge/piratebadge.html` replace the HTML code of badge with the new `<badge>`:
+5. In `piratebadge.html` replace the HTML code of badge with the new `<badge>`:
 
     ```HTML
     <badge name="{{ctrl.name}}" style='float: left; margin-left: 20px;'></badge>
