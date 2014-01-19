@@ -98,11 +98,9 @@ _**Keywords**: component, shadowDOM_
 
 **Bonus** : try to add several badges on your page.
 
-<a name="hints"></a>
-> **Hints:**
-> 
-> - [Increasing code reuse through Components](https://github.com/angular/angular.dart.tutorial/wiki/Increasing-code-reuse-through-Components)
-> - [Shadow DOM](http://www.w3.org/TR/shadow-dom/)
+### Learn more about
+ - [Increasing code reuse through Components](https://github.com/angular/angular.dart.tutorial/wiki/Increasing-code-reuse-through-Components)
+ - [Shadow DOM](http://www.w3.org/TR/shadow-dom/)
 
 ### Problems?
 Check your code against the files in [4-extractcomponent](../web/4-extractcomponent).

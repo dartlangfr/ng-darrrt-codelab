@@ -50,10 +50,8 @@ _**Keywords**: filter_
  
 4. Run `piratebadge.html`. Try to modify the input content and see how the name is capitalized.
 
-<a name="hints"></a>
-> **Hints:**
-> 
-> - [Introducing Filters](https://github.com/angular/angular.dart.tutorial/wiki/Introducing-filters-and-services#introducing-filters)
+### Learn more about
+ - [Introducing Filters](https://github.com/angular/angular.dart.tutorial/wiki/Introducing-filters-and-services#introducing-filters)
 
 ### Problems?
 Check your code against the files in [8-filter](../web/8-filter).

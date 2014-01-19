@@ -44,11 +44,8 @@ _**Keywords**: binding, scope, model_
 
 4. Run `web/1-blankbadge/piratebadge.html` and try to modify the input content. Notice how the view is updated in real time whenever the model changes. This is called _Two Way Data Binding_. Angular listens for changes to the model and updates the view to reflect those changes.
 
-<a name="hints"></a>
-> **Hints:**
-> 
-> - [How Angular does MVC](https://github.com/angular/angular.dart.tutorial/wiki/Creating-your-first-Angular-app#how-angular-does-mvc)
->
+### Learn more about
+ - [How Angular does MVC](https://github.com/angular/angular.dart.tutorial/wiki/Creating-your-first-Angular-app#how-angular-does-mvc)
 
 ### Problems?
 Check your code against the files in [2-inputnamebadge](../web/2-inputnamebadge).

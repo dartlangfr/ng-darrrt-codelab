@@ -136,10 +136,9 @@ _**Keywords**: HTTP Request, Dependency Injection_
  > - If the expression in `ng-disabled` is truthy, then special attribute "disabled" will be set on the element
  > - When `datasLoaded` in `BadgesController` is false, the input and button elements are disabled.
 
-<a name="hints"></a>
-> **Hints:**
-> 
-> - [Introducing the Http service](https://github.com/angular/angular.dart.tutorial/wiki/Introducing-filters-and-services) 
+
+### Learn more about
+ - [Introducing the Http service](https://github.com/angular/angular.dart.tutorial/wiki/Introducing-filters-and-services) 
 
 ### Problems?
 Check your code against the files in [6-piratebadge_json](../web/6-piratebadge_json).
