@@ -69,5 +69,12 @@ _**Keywords**: TODO_
   Dart Editor launches _Dartium_, a special build of Chromium that has the Dart Virtual Machine built in, and loads the `piratebadge.html` file. 
   The `piratebadge.html` file loads the app and calls the `main()` function.  
   You should see a TO DO comment on the left and a red and white name badge on the right.
+  
+##Problems?
+Check your code against the files in 2-inputbadge.
+
+<a href="../web/2-inputnamebadge/piratebadge.html" target="_blank">piratebadge.html</a>
+
+<a href="../web/2-inputnamebadge/piratebadge.dart" target="_blank">piratebadge.dart</a>
 
 ## [Home](../README.md) | [Next >](step-2.md)
