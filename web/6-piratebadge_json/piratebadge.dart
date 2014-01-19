@@ -61,6 +61,8 @@ class BadgesController {
 
   String get name => _name._firstName;
   String get pirateName => _name.pirateName;
+  bool get inputIsNotEmpty => !name.trim().isEmpty;
+  String get label => inputIsNotEmpty ? "Arrr! Write yer name!" : "Aye! Gimme a name!";
 
   generateName() {
     _name = new PirateName();

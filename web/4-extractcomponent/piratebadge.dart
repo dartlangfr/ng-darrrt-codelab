@@ -11,6 +11,9 @@ import 'badge/badge_component.dart';
 class BadgesController {
   String name = '';
 
+  bool get inputIsNotEmpty => !name.trim().isEmpty;
+  String get label => inputIsNotEmpty ? "Arrr! Write yer name!" : "Aye! Gimme a name!";
+
   generateName() {
     name = 'Anne Bonney';
   }

@@ -36,9 +36,12 @@ _**Keywords**: controller, module, click event_
     ``` 
     
  > Inside the ngBootstrap method, a new AngularModule is created. The AngularModule provides all of Angular’s built in services  and directives. Your app’s module is added to the list of modules that Angular loads.
- - In class `BadgesController`, add a `generateName` method :
+ - In class `BadgesController`, add an `inputIsNotEmpty` getter, an `label` getter and a `generateName` method :
 
-    ```Dart  
+    ```Dart
+    bool get inputIsNotEmpty => !name.trim().isEmpty;
+  	String get label => inputIsNotEmpty ? "Arrr! Write yer name!" : "Aye! Gimme a name!";
+      
     generateName() {
       name = 'Anne Bonney';
     }
@@ -58,12 +61,13 @@ _**Keywords**: controller, module, click event_
         <input type="text" id="inputName" maxlength="15" ng-model="name">
       </div>
       <div>
-        <button ng-click="ctrl.generateName()">Aye! Gimme a name!</button>
+        <button ng-click="ctrl.generateName()">{{label}}</button>
       </div>
     </div>
     ```
 
- > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller, passing it the recipe property from the view
+ > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller, passing it the recipe property from the view.
+ > `{{label}}` show you that a mustache can point to a getter.
  - Update data binding : replace `name` by `ctrl.name` to use name from controller.
 
     ```HTML
@@ -77,9 +81,8 @@ _**Keywords**: controller, module, click event_
  - Add a `ng-disabled` directive on the button tag who disable it when the input field will be not empty.
  
  	```HTML
-    <button 	ng-click="ctrl.generateName()"
-    			ng-disabled="ctrl.name.trim().isNotEmpty">
-    			Aye! Gimme a name!
+    <button ng-click="ctrl.generateName()" ng-disabled="ctrl.inputIsNotEmpty">
+    	{{label}}
     </button>
     ```
     

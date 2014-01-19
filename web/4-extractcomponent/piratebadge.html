@@ -19,7 +19,7 @@
         <input type="text" id="inputName" maxlength="15" ng-model="ctrl.name">
       </div>
       <div>
-        <button ng-click="ctrl.generateName()" ng-disabled="ctrl.name.trim().isNotEmpty">Aye! Gimme a name!</button>
+        <button ng-click="ctrl.generateName()" ng-disabled="ctrl.inputIsNotEmpty">{{ctrl.label}}</button>
       </div>
     </div>
     <badge name="{{ctrl.name}}" style='float: left; margin-left: 20px;'></badge>
