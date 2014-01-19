@@ -58,12 +58,11 @@ _**Keywords**: binding, scope, model_
 >
 
 ##Problems?
+Check your code against the files in 2-inputbadge.
 
-Check your code against the files in 3-buttonbadge.
+<a href="../web/2-inputnamebadge/piratebadge.html" target="_blank">piratebadge.html</a>
 
-<a href="../web/3-buttonbadge/piratebadge.html" target="_blank">piratebadge.html</a>
-
-<a href="../web/3-buttonbadge/piratebadge.dart" target="_blank">piratebadge.dart</a>
+<a href="../web/2-inputnamebadge/piratebadge.dart" target="_blank">piratebadge.dart</a>
 
 
 ## [Home](../README.md) | [< Previous](step-1.md) | [Next >](step-3.md)
