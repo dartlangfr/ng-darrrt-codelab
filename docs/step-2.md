@@ -1,4 +1,4 @@
-## 1. Set the text in badge with the input text.
+## 2. Set the text in badge with the input text.
 > **Goal**: As a user I can modify the text of the badge with the input field.
 
 _**Keywords**: binding, scope, model_
