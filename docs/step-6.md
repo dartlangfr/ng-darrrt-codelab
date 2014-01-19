@@ -43,6 +43,8 @@ _**Keywords**: HTTP Request, Dependency Injection_
     ```Dart
     import 'dart:async' show Future;
     ```
+ > - The dart:async library provides for asynchronous programming.
+ > - A Future provides a way to get a value in the future. (For JavaScript developers: Futures are similar to Promises.)
  - In `PirateName` class, replace the `names` and `appelations` lists with these static, empty lists:
 
     ```Dart
@@ -53,10 +55,13 @@ _**Keywords**: HTTP Request, Dependency Injection_
       // ...
     }
     ```
+ > - Be sure to remove final from these declarations.
+ > - [] is equivalent to new List().
+ > - A List is a generic type—a List can contain any kind of object. If you intend for a list to contain only strings, you can declare it as List<String>.
  - In `BadgesController` class, add a private field `Http _http`:
 
     ```Dart
-    class PirateName {
+    class BadgesController {
       // ...
       final Http _http;
       // ...
@@ -66,7 +71,7 @@ _**Keywords**: HTTP Request, Dependency Injection_
  - Add a constructor to initialize `_http`:
 
     ```Dart
-    class PirateName {
+    class BadgesController {
       // ...
       BadgesController(this._http);
       // ...
@@ -76,7 +81,7 @@ _**Keywords**: HTTP Request, Dependency Injection_
  - Add a private function `_loadData`:
 
     ```Dart
-    class PirateName {
+    class BadgesController {
       // ...
       Future _loadData() {
         return _http.get('piratenames.json').then((HttpResponse response) {
@@ -87,24 +92,34 @@ _**Keywords**: HTTP Request, Dependency Injection_
       // ...
     }
     ```
- > - **TODO**
- - Then, in the constructor, add the code to get the names from the JSON file, handling both success and failure.
+ > - `get` is a shortcut method for GET requests.
+ > - The code uses a Future to perform the GET asynchronously.
+ > - The callback function for .then() is called when the Future completes successfully.
+ > - When the Future completes successfully, the pirate names and appelations are read from the response's data. The response's data is directly transformed as a `Map` object.
+ > - `_loadData` returns the Future so the controller has the opportunity to do something after the file is read.
+- Then, in the constructor, add the code to get the names from the JSON file, handling both success and failure.
 
     ```Dart
-    class PirateName {
+    class BadgesController {
       // ...
       bool datasLoaded = false;
       
       BadgesController(this._http) {
-        _loadData().then((HttpResponse response) {
+        _loadData().then((_) {
           datasLoaded = true;
-        }, onError: (Object obj) {
+        }, onError: (_) {
           datasLoaded = false;
         });
       }
       // ...
     }
     ```
+ > - Call the `_loadData()` function, which returns a Future.
+ > - When the Future successfully completes, the `then()` callback function is called.
+ > - Using underscore (`_`) as a parameter name indicates that the parameter is ignored.
+ > - The callback function enables the UI.
+ > - If the Future encounters an error the `onError` callback function is called and the program leaves the UI disabled.
+ > - The callback functions for `then()` and `onError` are defined inline.
 3. Edit piratebadge.html    
  - Enable `inputName` and the `button` only when data is loaded:
 
@@ -118,7 +133,8 @@ _**Keywords**: HTTP Request, Dependency Injection_
       </div>
     ...
     ```
- > - **TODO**
+ > - If the expression in `ng-disabled` is truthy, then special attribute "disabled" will be set on the element
+ > - When `datasLoaded` in `BadgesController` is false, the input and button elements are disabled.
 
 <a name="hints"></a>
 > **Hints:**

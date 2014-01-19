@@ -50,9 +50,9 @@ class BadgesController {
   bool datasLoaded = false;
 
   BadgesController(this._http) {
-    _loadData().then((HttpResponse response) {
+    _loadData().then((_) {
       datasLoaded = true;
-    }, onError: (Object obj) {
+    }, onError: (_) {
       datasLoaded = false;
     });
   }
