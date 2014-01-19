@@ -1,7 +1,13 @@
+### What is Angular ?
+Angular is a client-side structural framework for creating dynamic web applications. It uses HTML as the template language and allows you to extend HTML to accommodate the needs of your application.
+Angular helps you extend HTML’s syntax to create custom elements and attributes that contain application behavior. Angular reduces the need to do DOM manipulation as Directives create reusable components that do most of what you need without requiring you to repeat DOM boilerplate everywhere. This allows you to concentrate on your application’s logic, and not on how to trick the browser into doing what you want.
+The MVC pattern from Angular’s perspective: Separate applications into distinct presentation, data, and logic components. Encourage loose coupling between these components.
+
 ## 1. Run the skeleton app.
 > **Goal**: In this step, you open the source files, familiarize yourself with the Dart and HTML code, and run the app.
 
 _**Keywords**: TODO_
+
 
 1. Expand the `1-blankbadge` directory.
   In Dart Editor, expand the `1-blankbadge` directory by clicking the little arrow ► to the left of its name. 

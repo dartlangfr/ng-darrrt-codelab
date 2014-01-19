@@ -9,9 +9,6 @@ Learn how to build a webapp with Angular.Dart in one hour.
 ### Prerequisites
 Before you begin this codelab, you should have the last [Dart Editor][1] Setup ready.
 
-### What is Angular
-**TODO**
-
 ### Useful links
 - [A Tour of the Dart Language][2]
 - [Dart API Reference][3]
