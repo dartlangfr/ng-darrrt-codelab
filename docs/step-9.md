@@ -1,4 +1,4 @@
-## 8. Keep the page empty until it has been initialized.
+## 9. Keep the page empty until it has been initialized.
 > **Goal**: As a user I don't want to see `{{bla-bla}}` when I land on the page
 
 _**Keywords**: cloak_

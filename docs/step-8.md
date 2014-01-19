@@ -1,4 +1,4 @@
-## 7. Capitalize the name on the badge.
+## 8. Capitalize the name on the badge.
 > **Goal**: Using a filter to modify the datas provided.
 
 _**Keywords**: filter_
