@@ -3,6 +3,11 @@ Angular is a client-side structural framework for creating dynamic web applicati
 Angular helps you extend HTML’s syntax to create custom elements and attributes that contain application behavior. Angular reduces the need to do DOM manipulation as Directives create reusable components that do most of what you need without requiring you to repeat DOM boilerplate everywhere. This allows you to concentrate on your application’s logic, and not on how to trick the browser into doing what you want.
 The MVC pattern from Angular’s perspective: Separate applications into distinct presentation, data, and logic components. Encourage loose coupling between these components.
 
+-----------------------------
+> **Note**: If you have already done the [Official Darrrt Code Lab](https://www.dartlang.org/codelabs/darrrt/), you can jump to the **[next step](step-2.md)**.
+
+-----------------------------
+
 ## 1. Run the skeleton app.
 > **Goal**: In this step, you open the source files, familiarize yourself with the Dart and HTML code, and run the app.
 
