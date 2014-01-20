@@ -5,7 +5,7 @@
 import 'package:angular/angular.dart';
 
 @NgController(
-    selector: '[bagdes]',
+    selector: '[badges]',
     publishAs: 'ctrl')
 class BadgesController {
 
