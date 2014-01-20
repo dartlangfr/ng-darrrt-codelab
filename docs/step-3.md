@@ -19,7 +19,7 @@ _**Keywords**: controller, module, click event_
 
     ```Dart
     @NgController(
-       selector: '[bagdes]',
+       selector: '[badges]',
        publishAs: 'ctrl')
     class BadgesController {   
     ````
