@@ -129,7 +129,7 @@ _**Keywords**: HTTP Request, Dependency Injection_
         <input type="text" id="inputName" maxlength="15" ng-model="ctrl.name" ng-disabled="!ctrl.datasLoaded">
       </div>
       <div>
-        <button ng-click="ctrl.generateName()" ng-disabled="!ctrl.datasLoaded || ctrl.name.trim().isNotEmpty">Aye! Gimme a name!</button>
+        <button ng-click="ctrl.generateName()" ng-disabled="!ctrl.datasLoaded || ctrl.inputIsNotEmpty">{{ctrl.label}}</button>
       </div>
     ...
     ```
