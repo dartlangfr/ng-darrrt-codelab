@@ -82,7 +82,7 @@ _**Keywords**: controller, module, click event_
  
  	```HTML
     <button ng-click="ctrl.generateName()" ng-disabled="ctrl.inputIsNotEmpty">
-    	{{label}}
+    	{{ctrl.label}}
     </button>
     ```
     
