@@ -4,3 +4,5 @@ packages
 pubspec.lock
 *.idea
 *.iml
+
+*.dart.*
