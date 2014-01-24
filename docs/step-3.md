@@ -61,13 +61,13 @@ _**Keywords**: controller, module, click event_
         <input type="text" id="inputName" maxlength="15" ng-model="name">
       </div>
       <div>
-        <button ng-click="ctrl.generateName()">{{label}}</button>
+        <button ng-click="ctrl.generateName()">{{ctrl.label}}</button>
       </div>
     </div>
     ```
 
  > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller, passing it the recipe property from the view.
- > `{{label}}` show you that a mustache can point to a getter.
+ > `{{ctrl.label}}` show you that a mustache can point to a getter.
  - Update data binding : replace `name` by `ctrl.name` to use name from controller.
 
     ```HTML
