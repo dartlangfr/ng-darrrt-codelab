@@ -12,7 +12,7 @@ _**Keywords**: component, shadowDOM_
         Arrr! Me name is
       </div>
       <div class="name">
-        <span id="badgeName">{{ctrl.name}}</span>
+        <span id="badgeName">{{cmp.name}}</span>
       </div>
     </div>
     ```
@@ -58,7 +58,7 @@ _**Keywords**: component, shadowDOM_
         selector: 'badge',
         templateUrl: 'badge/badge_component.html',
         cssUrl: 'badge/badge_component.css',
-        publishAs: 'ctrl',
+        publishAs: 'cmp',
         map: const {
           'name' : '@name',
         }
