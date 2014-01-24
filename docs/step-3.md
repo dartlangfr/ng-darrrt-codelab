@@ -61,7 +61,7 @@ _**Keywords**: controller, module, click event_
         <input type="text" id="inputName" maxlength="15" ng-model="name">
       </div>
       <div>
-        <button ng-click="ctrl.generateName()">{{label}}</button>
+        <button ng-click="ctrl.generateName()">{{ctrl.label}}</button>
       </div>
     </div>
     ```
