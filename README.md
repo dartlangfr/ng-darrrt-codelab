@@ -7,7 +7,7 @@ Learn how to build a webapp with AngularDart in one hour.
 
 Before you begin this codelab, you should have the last [Dart Editor][1] Setup ready.  
 [Download](https://github.com/dartlangfr/ng-darrrt-codelab/archive/master.zip)
-the sample code. Unzip the ZIP file, which creates a directory called `ng-darrrt-codelab`.
+the sample code. Unzip the ZIP file, which creates a directory called `ng-darrrt-codelab-master`.
 
 ### Steps
 
