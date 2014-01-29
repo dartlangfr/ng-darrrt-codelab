@@ -25,7 +25,7 @@ This codelab is divided into the following sections:
 - [A Tour of the Dart Language][2]
 - [Dart API Reference][3]
 - [AngularJs][4]
-- [Angular.dart tutorial][5]
+- [AngularDart tutorial][5]
 
 
 ### Feedback
