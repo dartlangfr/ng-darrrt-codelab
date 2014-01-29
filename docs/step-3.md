@@ -66,7 +66,7 @@ _**Keywords**: controller, module, click event_
     </div>
     ```
 
- > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller, passing it the recipe property from the view.
+ > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller.
  > `{{ctrl.label}}` show you that a mustache can point to a getter.
  - Update data binding : replace `name` by `ctrl.name` to use name from controller.
 
