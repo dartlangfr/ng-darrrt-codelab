@@ -78,7 +78,7 @@ _**Keywords**: component, shadowDOM_
     <badge name="{{ctrl.name}}" style='float: left; margin-left: 20px;'></badge>
     ```
 
-6. Register the new component. In `web/3a-buttonbadge/piratebadge.dart`:
+6. Register the new component. In `piratebadge.dart`:
  - Add an import for the component library:
 
     ```Dart
