@@ -57,7 +57,7 @@ _**Keywords**: HTTP Request, Dependency Injection_
     ```
  > - Be sure to remove final from these declarations.
  > - [] is equivalent to new List().
- > - A List is a generic type—a List can contain any kind of object. If you intend for a list to contain only strings, you can declare it as List<String>.
+ 
  - In `BadgesController` class, add a private field `Http _http`:
 
     ```Dart
