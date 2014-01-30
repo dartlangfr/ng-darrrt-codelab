@@ -20,7 +20,7 @@ _**Keywords**: main, pub, Dartium, Angular_
   	```
 	> - Thanks to this file, you can define the name, the description of our project and many dependencies by adding a `name_of_your_dependency: version_of_your_dependency` line in the `dependencies` section (be careful, the YAML format that is used by the pubspec file is sensitive to tabulation). In our case we define that the project needs the `browser`, `shadow_dom` and the `angular` dependencies in any version.
 	>  - The `browser` dependency is used in Dart browser apps to check for native Dart support and either (a) bootstrap Dartium or (b) load compiled JS instead.
-	>  - The `shadow_dom` dependency is here to emulate ShadowDom on browsers that doesn't support it natively. 
+	>  - The `shadow_dom` dependency is here to emulate ShadowDom on browsers that don't support this natively. 
 	>  - The `angular` dependency is obviously the port of the Angular framework in Dart.
 	> - All available dependencies in Dart are stored and listed on the [pub.dartlang.org](http://pub.dartlang.org/) web site.
 
