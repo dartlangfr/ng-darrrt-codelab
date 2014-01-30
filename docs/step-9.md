@@ -18,7 +18,7 @@ _**Keywords**: cloak_
  - Add the `ng-cloak` directive on the body tag:
  
     ```HTML
-    <body bagdes ng-cloak>
+    <body badges ng-cloak>
     ```
 2. Run `piratebadge.html`. You shouldn't see any mustache on the page.
 

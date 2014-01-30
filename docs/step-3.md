@@ -48,7 +48,7 @@ _**Keywords**: controller, module, click event_
     ```
 
 2. Open `piratebadge.html`. 
- - Add `bagdes` (the controller selector name) on the `<body>` element:
+ - Add `badges` (the controller selector name) on the `<body>` element:
 
     ```HTML
     <body badges>
