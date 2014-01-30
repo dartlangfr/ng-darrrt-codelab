@@ -14,10 +14,14 @@ _**Keywords**: main, pub, Dartium, Angular_
 	name: ng-darrrt-codelab
 	description: A one hour excercice, based on the Darrrt project, to learn AngularDart.
 	dependencies:
-  		angular: any
-  		browser: any
+  	  angular: any
+      browser: any
+      shadow_dom: any
   	```
-	> - Thanks to this file, you can define the name, the description of our project and many dependencies by adding a `name_of_your_dependency: version_of_your_dependency` line in the `dependencies` section (be careful, the YAML format that is used by the pubspec file is sensitive to tabulation). In our case we define that the project needs the `browser` and the `angular` dependencies in any version. The browser dependency is used in Dart browser apps to check for native Dart support and either (a) bootstrap Dartium or (b) load compiled JS instead. And the angular dependency is obviously the port of the Angular framework in Dart.
+	> - Thanks to this file, you can define the name, the description of our project and many dependencies by adding a `name_of_your_dependency: version_of_your_dependency` line in the `dependencies` section (be careful, the YAML format that is used by the pubspec file is sensitive to tabulation). In our case we define that the project needs the `browser`, `shadow_dom` and the `angular` dependencies in any version.
+	>  - The `browser` dependency is used in Dart browser apps to check for native Dart support and either (a) bootstrap Dartium or (b) load compiled JS instead.
+	>  - The `shadow_dom` dependency is here to emulate ShadowDom on browsers that doesn't support it natively. 
+	>  - The `angular` dependency is obviously the port of the Angular framework in Dart.
 	> - All available dependencies in Dart are stored and listed on the [pub.dartlang.org](http://pub.dartlang.org/) web site.
 
 -----------------------------
@@ -56,6 +60,7 @@ _**Keywords**: main, pub, Dartium, Angular_
           </div>
         </div>
     
+        <script src="packages/shadow_dom/shadow_dom.min.js"></script>
         <script type="application/dart" src="piratebadge.dart"></script>
         <script src="packages/browser/dart.js"></script>
       </body>
