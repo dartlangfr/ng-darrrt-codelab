@@ -39,7 +39,7 @@ class PirateName {
 }
 
 @NgController(
-    selector: '[bagdes]',
+    selector: '[badges]',
     publishAs: 'ctrl')
 class BadgesController {
   PirateName _name = new PirateName(firstName: '');
