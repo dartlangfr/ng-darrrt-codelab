@@ -1,7 +1,7 @@
 ## 4. Create a badge component.
-> **Goal**: As a developper I can use a `<badge>` tag to put badge everywhere.
+> **Goal**: As a developer I can use a `<badge>` tag to put a badge anywhere.
 
-_**Keywords**: component, shadowDOM_
+_**Keywords**: component, ShadowDOM_
 
 1. Create a `badge` folder in your work directory that will host all our compenent files.
 2. Create a file `badge/badge_component.html` and move the HTML corresponding to the badge in this new file:
@@ -58,20 +58,17 @@ _**Keywords**: component, shadowDOM_
         selector: 'badge',
         templateUrl: 'badge/badge_component.html',
         cssUrl: 'badge/badge_component.css',
-        publishAs: 'cmp',
-        map: const {
-          'name' : '@name',
-        }
+        publishAs: 'cmp'
     )
     class BadgeComponent {
+      @NgOneWay('name')
       String name;
     }
     ```
  >#### `templateUrl` and `cssUrl`
  >Since Components are self contained, they need to know what HTML template and CSS to use for their view. Components do not use the HTML of your app. They have their own.
  >#### `map`
- >The last property we see in the `NgComponent` annotation is an attribute `map`. It maps HTML attributes to properties on the Component and represents the API for the Component. Users of this Component will be able to supply their own values for the attributes in this map.
- >You can read more about all the ways to declare an attribute [here](http://ci.angularjs.org/view/Dart/job/angular.dart-master/javadoc/angular.core/NgDirective.html#map).
+ >The `name` field of the class is marked with `@NgOneWay`, which specifies that the field is to be mapped to DOM attribute.
 5. In `piratebadge.html` replace the HTML code of badge with the new `<badge>`:
 
     ```HTML
