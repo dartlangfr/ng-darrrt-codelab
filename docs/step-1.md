@@ -14,13 +14,11 @@ _**Keywords**: main, pub, Dartium, Angular_
 	name: ng-darrrt-codelab
 	description: A one hour excercice, based on the Darrrt project, to learn AngularDart.
 	dependencies:
-  	  angular: any
+      angular: any
       browser: any
-      shadow_dom: any
   	```
 	> - Thanks to this file, you can define the name, the description of our project and many dependencies by adding a `name_of_your_dependency: version_of_your_dependency` line in the `dependencies` section (be careful, the YAML format that is used by the pubspec file is sensitive to tabulation). In our case we define that the project needs the `browser`, `shadow_dom` and the `angular` dependencies in any version.
 	>  - The `browser` dependency is used in Dart browser apps to check for native Dart support and either (a) bootstrap Dartium or (b) load compiled JS instead.
-	>  - The `shadow_dom` dependency is here to emulate ShadowDom on browsers that don't support this natively. 
 	>  - The `angular` dependency is obviously the port of the Angular framework in Dart.
 	> - All available dependencies in Dart are stored and listed on the [pub.dartlang.org](http://pub.dartlang.org/) web site.
 
@@ -66,7 +64,8 @@ _**Keywords**: main, pub, Dartium, Angular_
       </body>
     </html>
     ```
- > - The first `<script>` tag identifies the main file that implements the app. Here, it’s the `piratebadge.dart` file.
+ > - The first `<script>` tag is here to emulate ShadowDom on browsers that don't support this natively.
+ > - The second `<script>` tag identifies the main file that implements the app. Here, it’s the `piratebadge.dart` file.
  > - The Dart Virtual Machine (Dart VM) runs Dart code natively. The Dart VM is built into Dartium, a special build of the Chromium browser in which you can run Dart apps natively.
  > - The `packages/browser/dart.js` script checks for native Dart support and either bootstraps the Dart VM or loads compiled JavaScript instead.
   - piratebadge.dart

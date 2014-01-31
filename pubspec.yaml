@@ -3,4 +3,3 @@ description: A one hour excercice, based on the Darrrt project, to learn Angular
 dependencies:
   angular: any
   browser: any
-  shadow_dom: any
