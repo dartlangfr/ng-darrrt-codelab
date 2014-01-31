@@ -8,6 +8,9 @@ import 'package:angular/angular.dart';
 
 import 'badge/badge_component.dart';
 
+@MirrorsUsed(override:'*')
+import 'dart:mirrors';
+
 class PirateName {
   static final Random indexGen = new Random();
 

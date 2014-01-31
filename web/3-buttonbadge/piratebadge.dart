@@ -4,6 +4,9 @@
 
 import 'package:angular/angular.dart';
 
+@MirrorsUsed(override:'*')
+import 'dart:mirrors';
+
 @NgController(
     selector: '[badges]',
     publishAs: 'ctrl')
