@@ -15,8 +15,8 @@ class PirateName {
     'Anne', 'Mary', 'Jack', 'Morgan', 'Roger',
     'Bill', 'Ragnar', 'Ed', 'John', 'Jane' ];
   static final List appellations = [
-    'Black','Damned', 'Jackal', 'Red', 'Stalwart', 'Axe',
-    'Young', 'Old', 'Angry', 'Brave', 'Crazy', 'Noble'];
+    'Wise', 'Stalwart', 'Axe',
+    'Brave', 'Noble', 'Strong'];
 
   String _firstName;
   String _appellation;
