@@ -11,6 +11,9 @@ import 'badge/badge_component.dart';
 import 'filter/capitalize_filter.dart';
 import 'rockandroll/rockandroll_directive.dart';
 
+@MirrorsUsed(override:'*')
+import 'dart:mirrors';
+
 class PirateName {
   static final Random indexGen = new Random();
 

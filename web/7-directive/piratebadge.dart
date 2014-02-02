@@ -10,6 +10,9 @@ import 'package:angular/angular.dart';
 import 'badge/badge_component.dart';
 import 'rockandroll/rockandroll_directive.dart';
 
+@MirrorsUsed(override:'*')
+import 'dart:mirrors';
+
 class PirateName {
   static final Random indexGen = new Random();
 
