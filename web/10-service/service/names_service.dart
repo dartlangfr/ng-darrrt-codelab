@@ -15,7 +15,7 @@ class NamesService {
 
   NamesService(this._http);
 
-  Future load() {
+  Future _load() {
     if (names != null) return new Future.value(true);
     // TODO inject the location
     return _http.get('piratenames.json').then((HttpResponse response) {
@@ -24,9 +24,13 @@ class NamesService {
     });
   }
 
-  String randomName() => _oneRandom(names);
+  Future<String> randomName() {
+    return _load().then((_) => _oneRandom(names));
+  }
 
-  String randomAppellation() => _oneRandom(appellations);
+  Future<String> randomAppellation() {
+    return _load().then((_) => _oneRandom(appellations));
+  }
 
   String _oneRandom(List<String> list) => list[indexGen.nextInt(list.length)];
 }

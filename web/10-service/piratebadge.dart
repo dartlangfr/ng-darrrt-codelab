@@ -13,6 +13,7 @@ import 'service/names_service.dart';
 import 'badge/badge_component.dart';
 import 'filter/capitalize_filter.dart';
 import 'rockandroll/rockandroll_directive.dart';
+import 'dart:async';
 
 class PirateName {
   String firstName;
@@ -37,20 +38,12 @@ class BadgesController {
 
   final NamesService _names;
 
-  bool datasLoaded = false;
-
-  BadgesController(this._names) {
-    // TODO proper error handling.
-    _names.load().then((_) {
-      datasLoaded = true;
-    })
-    .catchError((e) {
-      datasLoaded = false;
-    });
-  }
+  BadgesController(this._names);
 
   set name(String value) {
-    _name = new PirateName(value, _names.randomAppellation());
+    _names.randomAppellation().then((appell) {
+      _name = new PirateName(value, appell);
+    });
   }
 
   String get name => _name.firstName;
@@ -58,8 +51,16 @@ class BadgesController {
   bool get inputIsNotEmpty => !name.trim().isEmpty;
   String get label => inputIsNotEmpty ? "Arrr! Write yer name!" : "Aye! Gimme a name!";
 
-  generateName() {
-    _name = new PirateName(_names.randomName(), _names.randomAppellation());
+  Future generateName() {
+    String firstName, appellation;
+    return _names
+      .randomAppellation()
+      .then((appell) => appellation = appell)
+      .then((_) => _names.randomName())
+      .then((name) => firstName = name)
+      .then((_) {
+        _name = new PirateName(firstName, appellation);
+      });
   }
 
 }

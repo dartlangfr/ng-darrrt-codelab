@@ -21,10 +21,10 @@
     <h1>Pirate badge</h1>
     <div class="widgets">
       <div>
-        <input type="text" id="inputName" maxlength="15" ng-model="ctrl.name" ng-disabled="!ctrl.datasLoaded">
+        <input type="text" id="inputName" maxlength="15" ng-model="ctrl.name">
       </div>
       <div>
-        <button ng-click="ctrl.generateName()" ng-disabled="!ctrl.datasLoaded || ctrl.inputIsNotEmpty">{{ctrl.label}}</button>
+        <button ng-click="ctrl.generateName()" ng-disabled="ctrl.inputIsNotEmpty">{{ctrl.label}}</button>
       </div>
     </div>
     <badge name="{{ctrl.pirateName | capitalize}}" style='float: left; margin-left: 20px;' rock-and-roll></badge>
