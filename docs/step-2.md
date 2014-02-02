@@ -16,15 +16,23 @@ _**Keywords**: binding, scope, model_
 
 	>The `ng-app` Directive can be placed on any element, and tells Angular which element is the root element of the application. Anything inside of this element is part of the page template managed by Angular. Unless you have a reason for Angular to manage only part of the app, it is recommended to put the `ng-app` Directive on the HTML element because it is the outermost tag.
 
-2. Open `web/1-blankbadge/piratebadge.dart`. Add `ngBootstrap()` to the main content to bootstrap our application :
+2. Open `web/1-blankbadge/piratebadge.dart`. Add `ngBootstrap()` and the import statements :
 
     ```Dart
 	import 'package:angular/angular.dart';
+
+    @MirrorsUsed(override: '*')
+    import 'dart:mirrors';
 	
 	void main() {
 	  ngBootstrap();
 	}
     ```
+    
+    An `import` pulls in a Dart library. You also have to add an import
+    for `dart:mirrors` and annotate it with `@MirrorsUsed`, in order to
+    help the dart2js compiler generate smaller code.
+
 
 3. Bind the `input` to the badge content:
  - Set `{{name}}` as content within the `badgeName` `<span>`
