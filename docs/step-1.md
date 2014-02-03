@@ -8,18 +8,18 @@ The MVC pattern from Angular’s perspective: Separate applications into distinc
 
 _**Keywords**: main, pub, Dartium, Angular_
 
-1. Dart comes with a bunch of tools like Pub. Pub is the dependency manager built in the langage. Its configuration is define by the `pubspec.yaml` file in the root of project, take a look on this last.
+1. Dart comes with a bunch of tools like Pub. Pub is the dependency manager built in the language. Its configuration is defined by the `pubspec.yaml` file in the project root. For our app, it looks like this:
 
 	```	
 	name: ng-darrrt-codelab
-	description: A one hour excercice, based on the Darrrt project, to learn AngularDart.
+	description: A one hour excercise, based on the Darrrt project, to learn AngularDart.
 	dependencies:
       angular: any
       browser: any
   	```
-	> - Thanks to this file, you can define the name, the description of our project and many dependencies by adding a `name_of_your_dependency: version_of_your_dependency` line in the `dependencies` section (be careful, the YAML format that is used by the pubspec file is sensitive to tabulation). In our case we define that the project needs the `browser`, `shadow_dom` and the `angular` dependencies in any version.
-	>  - The `browser` dependency is used in Dart browser apps to check for native Dart support and either (a) bootstrap Dartium or (b) load compiled JS instead.
-	>  - The `angular` dependency is obviously the port of the Angular framework in Dart.
+	> - Thanks to this file, you can define the name, the description of our project and many dependencies by adding a `name_of_your_dependency: version_of_your_dependency` line in the `dependencies` section (be careful, the YAML format that is used by the pubspec file is sensitive to indentation). In our case, we define that the project needs any version of the `browser`, `shadow_dom` and the `angular` packages.
+	>  - The `browser` package is used in Dart browser apps to check for native Dart support and either (a) bootstrap Dartium or (b) load compiled JS instead.
+	>  - The `angular` package is obviously the port of the Angular framework in Dart.
 	> - All available dependencies in Dart are stored and listed on the [pub.dartlang.org](http://pub.dartlang.org/) web site.
 
 -----------------------------
@@ -28,7 +28,7 @@ _**Keywords**: main, pub, Dartium, Angular_
 -----------------------------
 
 1. Expand the `1-blankbadge` directory.
-  In Dart Editor, expand the `1-blankbadge` directory by clicking the little arrow ► to the left of its name. 
+  In the Dart Editor, expand the `1-blankbadge` directory by clicking the little arrow ► to the left of its name. 
   The directory contains two files, `piratebadge.html` and `piratebadge.dart`.
 2. Open the files.
   Open both files, `piratebadge.html` and `piratebadge.dart`, by double-clicking each filename in Dart Editor.
