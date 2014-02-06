@@ -36,7 +36,7 @@ _**Keywords**: controller, module, click event_
     ``` 
     
  > Inside the ngBootstrap method, a new AngularModule is created. The AngularModule provides all of Angular’s built in services  and directives. Your app’s module is added to the list of modules that Angular loads.
- - In class `BadgesController`, add an `inputIsNotEmpty` getter, an `label` getter and a `generateName` method :
+ - In class `BadgesController`, add an `inputIsNotEmpty` getter, a `label` getter and a `generateName` method :
 
     ```Dart
     bool get inputIsNotEmpty => !name.trim().isEmpty;
@@ -67,7 +67,7 @@ _**Keywords**: controller, module, click event_
     ```
 
  > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller.
- > `{{ctrl.label}}` show you that a mustache can point to a getter.
+ > `{{ctrl.label}}` show you that a mustache can refer to a getter.
  - Update data binding : replace `name` by `ctrl.name` to use name from controller.
 
     ```HTML
@@ -86,7 +86,7 @@ _**Keywords**: controller, module, click event_
     </button>
     ```
     
- > `ng-disabled` like the `ng-click` directive it's out of the box in AngularDart. This one is used to enable or disable a element according of a boolean expression. In our case we test than the name property is not empty after have trimed it.
+ > `ng-disabled`, like the `ng-click` directive, is a built-in AngularDart directive. It is used to enable or disable an element according to the value of a boolean expression. In our case we test that the controller's `name` property is not empty after we have trimmed it.
 
 3. Run `piratebadge.html` and click on button.
 
