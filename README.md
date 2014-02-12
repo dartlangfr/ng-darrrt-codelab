@@ -1,17 +1,19 @@
-ng-darrrt Codelab
+Code Lab: AngularDart
 =================
 
-Learn how to build a webapp with AngularDart in one hour.
+Build a web app with AngularDart in one hour.
 
 ### Prerequisites
 
-Before you begin this codelab, you should have the last [Dart Editor][1] Setup ready.  
-[Download](https://github.com/dartlangfr/ng-darrrt-codelab/archive/master.zip)
-the sample code. Unzip the ZIP file, which creates a directory called `ng-darrrt-codelab-master`.
+Before you begin this code lab:
+
+* [Download Dart Editor][1] if you don't already have it.
+* [Download our sample code.](https://github.com/dartlangfr/ng-darrrt-codelab/archive/master.zip)
+  Unzip the ZIP file, which creates a directory called `ng-darrrt-codelab-master`.
 
 ### Steps
 
-This codelab is divided into the following sections:
+This code lab has the following sections:
 
 1. [Run the skeleton app](docs/step-1.md)
 2. [Set the text in badge with the input text](docs/step-2.md)
@@ -34,8 +36,8 @@ This codelab is divided into the following sections:
 
 ### Feedback
 
-At the end, if you've got a few minutes, would you mind filling
-out an [anonymous feedback form][feedback] on the course so we can improve it in future?
+At the end, if you have a few minutes, please fill
+out our [anonymous feedback form][feedback].
 
 
 ### Credits
@@ -45,7 +47,7 @@ out an [anonymous feedback form][feedback] on the course so we can improve it in
 - [+Mathieu Breton](https://twitter.com/MatBreton), [@Xebia](http://www.xebia.fr)
 - [+Nicolas Fran\cois](https://plus.google.com/+NicolasFrancois), Dart Evangelist [@Sfeir](http://www.sfeir.com/)
 
-_Thanks to [+DartlangFr](http://gplus.to/dartlangfr) team._  
+_Thanks to the [+DartlangFr](http://gplus.to/dartlangfr) team._  
 
   [1]: https://www.dartlang.org/
   [2]: https://www.dartlang.org/docs/dart-up-and-running/contents/ch02.html
