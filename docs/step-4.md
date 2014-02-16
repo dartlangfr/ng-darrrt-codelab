@@ -3,7 +3,7 @@
 
 _**Keywords**: component, ShadowDOM_
 
-1. Create a `badge` folder in your work directory that will host all our compenent files.
+1. Create a `badge` folder in your work directory that will host all our component files.
 2. Create a file `badge/badge_component.html` and move the HTML corresponding to the badge in this new file:
   
     ```HTML
