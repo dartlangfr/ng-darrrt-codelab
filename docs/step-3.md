@@ -22,20 +22,24 @@ _**Keywords**: controller, module, click event_
        selector: '[badges]',
        publishAs: 'ctrl')
     class BadgesController {   
-    ````
+    ```
 
- > This annotation tells Angular that the class `BadgesController` is an Angular Controller. 
- The required `selector` field defines the CSS selector that will trigger the Controller. It can be any valid CSS selector   which does not cross element boundaries.
- The `publishAs` field specifies that the Controller instance should be assigned to the current scope under the name specified
+  <blockquote>
+This annotation tells Angular that the class <code>BadgesController</code> is an Angular Controller.<br>
+The required <code>selector</code> field defines the CSS selector that will trigger the Controller. It can be any valid CSS selector which does not cross element boundaries.<br>
+The <code>publishAs</code> field specifies that the Controller instance should be assigned to the current scope under the name specified.
+  </blockquote>
  - Modify `main` method to create a new module.
 
     ```Dart
     void main() {
       ngBootstrap(module: new Module()..type(BadgesController));
     }
-    ``` 
-    
- > Inside the ngBootstrap method, a new AngularModule is created. The AngularModule provides all of Angular’s built in services  and directives. Your app’s module is added to the list of modules that Angular loads.
+    ```
+
+  <blockquote>
+Inside the ngBootstrap method, a new AngularModule is created. The AngularModule provides all of Angular’s built in services  and directives. Your app’s module is added to the list of modules that Angular loads.
+  </blockquote>
  - In class `BadgesController`, add an `inputIsNotEmpty` getter, a `label` getter and a `generateName` method :
 
     ```Dart
@@ -66,8 +70,10 @@ _**Keywords**: controller, module, click event_
     </div>
     ```
 
- > `ng-click` is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller.
- > `{{ctrl.label}}` show you that a mustache can refer to a getter.
+  <blockquote>
+<code>ng-click</code> is a built in Angular Directive that allows you to specify custom behavior when any element is clicked. In our example, it invokes the generateName() method on the controller.<br>
+<code>{{ctrl.label}}</code> show you that a mustache can refer to a getter.
+  </blockquote>
  - Update data binding : replace `name` by `ctrl.name` to use name from controller.
 
     ```HTML
@@ -77,7 +83,6 @@ _**Keywords**: controller, module, click event_
     ```HTML
     <span id="badgeName">{{ctrl.name}}</span>
     ```
-    
  - Add a `ng-disabled` directive on the button tag who disable it when the input field will be not empty.
  
  	```HTML
