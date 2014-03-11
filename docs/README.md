@@ -15,15 +15,15 @@ Before you begin this code lab:
 
 This code lab has the following sections:
 
-1. [Run the skeleton app](docs/step-1.md)
-2. [Set the text in badge with the input text](docs/step-2.md)
-3. [Add a generate name button](docs/step-3.md)
-4. [Create a badge component](docs/step-4.md)
-5. [Use a class as model](docs/step-5.md)
-6. [Read names from JSON-encoded file](docs/step-6.md)
-7. [Create a directive](docs/step-7.md)
-8. [Capitalize the name on the badge](docs/step-8.md)
-9. [Keep the page empty until it has been initialized](docs/step-9.md)
+1. [Run the skeleton app](step-1.md)
+2. [Set the text in badge with the input text](step-2.md)
+3. [Add a generate name button](step-3.md)
+4. [Create a badge component](step-4.md)
+5. [Use a class as model](step-5.md)
+6. [Read names from JSON-encoded file](step-6.md)
+7. [Create a directive](step-7.md)
+8. [Capitalize the name on the badge](step-8.md)
+9. [Keep the page empty until it has been initialized](step-9.md)
 
 
 ### Useful links
