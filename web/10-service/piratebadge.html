@@ -11,10 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Pirate badge</title>
     <link rel="stylesheet" href="../piratebadge.css">
+    <style type="text/css">
+    [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+       display: none !important;
+    }
+    </style>
   </head>
-  <body badges>
+  <body badges ng-cloak>
     <h1>Pirate badge</h1>
-    
     <div class="widgets">
       <div>
         <input type="text" id="inputName" maxlength="15" ng-model="ctrl.name">
@@ -23,14 +27,7 @@
         <button ng-click="ctrl.generateName()" ng-disabled="ctrl.inputIsNotEmpty">{{ctrl.label}}</button>
       </div>
     </div>
-    <div class="badge">
-      <div class="greeting">
-        Arrr! Me name is
-      </div>
-      <div class="name">
-        <span id="badgeName">{{ctrl.name}}</span>
-      </div>
-    </div>
+    <badge name="{{ctrl.pirateName | capitalize}}" style='float: left; margin-left: 20px;' rock-and-roll></badge>
     
     <script src="packages/shadow_dom/shadow_dom.min.js"></script>
     <script type="application/dart" src="piratebadge.dart"></script>
